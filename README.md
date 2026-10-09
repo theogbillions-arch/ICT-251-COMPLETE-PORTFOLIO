@@ -2,7 +2,7 @@
 
 A responsive, interactive personal portfolio built with plain HTML5, CSS and JavaScript for Mulungushi University (ICT251). Deployed as a static site on Render through GitHub.
 
-**Live site:** https://YOUR-SITE.onrender.com
+Live site: https://ict-251-complete-portfolio.onrender.com/
 
 Structure
 index.html
