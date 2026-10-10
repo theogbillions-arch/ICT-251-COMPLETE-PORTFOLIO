@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sianga Stephen | My Web Technologies Journey</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header id="top">
+        <h1>Sianga Stephen</h1>
+        <p class="programme">BSc Computer Science &middot; Mulungushi University &middot; Student Number: 202505601</p>
+        <p class="intro">
+            Welcome to my world of web. I am a Computer Science student learning to build
+            responsive, interactive websites from the ground up. Take a look at what I have
+            learned so far in ICT251 Web Technologies.
+        </p>
+        <a class="btn" href="#projects">View My Projects</a>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <div class="nav-controls">
+            <button type="button" id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-links">
+                <span aria-hidden="true">&#9776;</span> Menu: <span id="nav-state">Closed</span>
+            </button>
+            <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">
+                Theme: Light
+            </button>
+        </div>
+        <div id="nav-links" class="nav-links">
+            <a href="#about">About Me</a>
+            <a href="#hobbies">My Hobbies</a>
+            <a href="#learning-plan">Learning Plan</a>
+            <a href="#projects">Projects</a>
+            <a href="#photos">My Photos</a>
+            <a href="#media">My Media</a>
+            <a href="#contact">Contact</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs (learn web development)</a>
+        </div>
+    </nav>
+
+    <main>
+
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is Sianga Stephen, student number 202505601, and I am currently studying
+                Computer Science at Mulungushi University. I am taking ICT251 Web Technologies this
+                semester, and it is teaching me how the websites I use every day are actually built
+                from the ground up. Outside of class I enjoy staying active and keeping my mind busy,
+                which is where basketball, reading, and calisthenics come in. I am naturally curious
+                about how things work, and web development appeals to me because it combines logical
+                problem solving with visible, creative results. My goal for this course is to move from
+                writing basic HTML pages to building complete, styled, and interactive websites that I
+                can proudly show to other people.
+            </p>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Basketball</li>
+                <li>Reading and researching</li>
+                <li>Calisthenics</li>
+            </ul>
+        </section>
+
+        <section id="learning-plan" class="content-section">
+            <h2>My Learning Plan</h2>
+            <p>Steps I will take to improve my web development skills:</p>
+            <ol>
+                <li>Practice HTML and CSS daily by rebuilding small sections of real websites I like.</li>
+                <li>Learn JavaScript fundamentals through short exercises and mini projects.</li>
+                <li>Study responsive design so my pages work well on both phones and laptops.</li>
+                <li>Push every project to GitHub to build a portfolio I can share.</li>
+            </ol>
+
+            <div class="table-wrap">
+                <table>
+                    <caption>Weekly Web Learning Plan</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Topic</th>
+                            <th scope="col">Practice Task</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>HTML structure &amp; semantics</td>
+                            <td>Rebuild a simple page using header, nav, main, footer</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>CSS layout &amp; box model</td>
+                            <td>Style a card gallery with padding, margin and borders</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Forms &amp; accessibility</td>
+                            <td>Build a contact form with labels and validation</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>JavaScript basics</td>
+                            <td>Add simple interactivity to a button or form</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3>Study Hours Calculator</h3>
+            <p class="form-note">Enter how many hours you plan to study per day and on how many days per week.</p>
+            <form id="hours-form" class="small-form" novalidate>
+                <div class="form-row">
+                    <label for="hours-per-day">Planned hours per day</label>
+                    <input type="text" inputmode="decimal" id="hours-per-day" name="hours-per-day" aria-describedby="hours-error">
+                </div>
+                <div class="form-row">
+                    <label for="days-per-week">Days per week (1 to 7)</label>
+                    <input type="text" inputmode="numeric" id="days-per-week" name="days-per-week" aria-describedby="hours-error">
+                </div>
+                <p id="hours-error" class="error" role="alert"></p>
+                <div class="button-row">
+                    <button type="submit" class="btn">Calculate Weekly Hours</button>
+                    <button type="reset" class="btn btn-secondary" id="hours-reset">Clear</button>
+                </div>
+            </form>
+            <p id="hours-result" class="result" aria-live="polite"></p>
+        </section>
+
+        <section id="projects" class="content-section">
+            <h2>Projects &amp; Skills</h2>
+            <p>Three examples of what I have learned in this course so far.</p>
+            <div class="project-grid">
+                <article class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Built with semantic HTML5 and external CSS. I practised the box model, element, class and id selectors, and a consistent colour palette.</p>
+                    <p class="tags">HTML5 &middot; CSS3</p>
+                </article>
+                <article class="project-card">
+                    <h3>Responsive Layout</h3>
+                    <p>Used Flexbox, Grid and media queries so the page stays readable on phones and computers without sideways scrolling.</p>
+                    <p class="tags">Flexbox &middot; Grid &middot; Media queries</p>
+                </article>
+                <article class="project-card">
+                    <h3>Interactive Features</h3>
+                    <p>Added JavaScript for form validation, a theme switch, a study hours calculator and a mobile menu using functions, events and DOM updates.</p>
+                    <p class="tags">JavaScript &middot; DOM &middot; Events</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="photos" class="content-section">
+            <h2>My Photo Gallery</h2>
+            <p>A few photos from my life as a student.</p>
+            <div class="gallery">
+                <figure>
+                    <img src="images/photo1.jpg" alt="Sianga Stephen standing on the Mulungushi University campus">
+                    <figcaption>On campus at Mulungushi University.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo2.jpg" alt="Sianga Stephen playing basketball on an outdoor court">
+                    <figcaption>Playing basketball, one of my favourite hobbies.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/photo3.jpg" alt="A desk with a laptop where Sianga practises web development">
+                    <figcaption>My study corner where I practice web development.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+
+            <div class="media-item">
+                <h3>Self-Introduction Video</h3>
+                <video controls preload="metadata">
+                    <source src="videos/intro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p><strong>Transcript / summary:</strong> "Hi, my name is Sianga Stephen. I'm a Computer
+                Science student at Mulungushi University, and one web skill I hope to learn this
+                semester is building responsive, interactive websites with JavaScript."</p>
+            </div>
+
+            <div class="media-item">
+                <h3>Audio Clip</h3>
+                <audio controls preload="metadata">
+                    <source src="videos/voice.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+                <p><strong>Description:</strong> A short recording describing why I enjoy Calisthenics
+                and how it helps me stay disciplined, which carries over into how I approach studying
+                web technologies.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <p class="form-note"><strong>Browser demonstration only &mdash; no message is sent.</strong> The form checks your input and shows a preview on this page.</p>
+            <form id="contact-form" action="#" novalidate>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required aria-describedby="name-error">
+                    <span id="name-error" class="error" role="alert"></span>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required aria-describedby="email-error">
+                    <span id="email-error" class="error" role="alert"></span>
+                </div>
+
+                <div class="form-row">
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic">
+                        <option value="General enquiry">General enquiry</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Feedback on my site">Feedback on my site</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+                    <span id="message-error" class="error" role="alert"></span>
+                </div>
+
+                <button type="submit" class="btn">Preview Message</button>
+            </form>
+
+            <div id="form-preview" class="preview" aria-live="polite" hidden>
+                <h3>Validated Preview</h3>
+                <p class="form-note">Your data was validated in the browser. Nothing has been sent or delivered.</p>
+                <dl>
+                    <dt>Name</dt><dd id="preview-name"></dd>
+                    <dt>Email</dt><dd id="preview-email"></dd>
+                    <dt>Topic</dt><dd id="preview-topic"></dd>
+                    <dt>Message</dt><dd id="preview-message"></dd>
+                </dl>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sianga Stephen &middot; ICT251 Web Technologies &middot; Activity 3</p>
+        <p><a href="https://github.com/theogbillions-arch/ICT-251-COMPLETE-PORTFOLIO.git" target="_blank" rel="noopener">View Source on GitHub</a></p>
+    </footer>
+
+</body>
+</html>
